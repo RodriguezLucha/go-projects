@@ -1,8 +1,10 @@
 package main
 
-import "github.com/gin-gonic/gin"
-import "database/sql"
-import _ "github.com/go-sql-driver/mysql"
+import (
+	"github.com/gin-gonic/gin"
+
+	_ "github.com/go-sql-driver/mysql"
+)
 
 func get_ping(c *gin.Context) {
 	c.JSON(200, gin.H{
